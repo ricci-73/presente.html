@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário minha vida</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="website icon" href="heart.ico">
+</head>
+<body> <center>
+   <audio controls>
+  <source src="Wonderwall.mp3" type="audio/mp3">
+</audio>
+    <div class="feliz-aniversario "><h2> Feliz Aniversário Amor da Minha Vida</h2>
+        <h3>Amor, como você sabe, não sou bom com palavras, mas pelo menos vou tentar dissertar em um textinho.<br>
+        Primeiramente, feliz-aniversario Meu Bem, tudo de bom e do melhor para ti.
+        </h3>
+        <h4><p> Segundamente queria deixar claro, o quão especial você é na minha vida, amor, uma menina sorridente, cuja a alegria contagia as pessoas ao redor. <br> A minha vida em sua ausência, se torna um moinho sem vento.
+Fazem aproximadamente 2 anos que eu te conheço, e sei que só nos aproximamos há pouco tempo, mas ja sei que esse tempo é o suficiente para dizer que eu à amo muito, não só a você, mas todas as experiências e sentimentos que vem junto a essa bela pessoa que voce é.<br>
+ Nao sei se é uma otima forma de parabenizar alguém. Mas estou fazendo esse textinho, para te mostrar que não só apenas te amo, como daria tudo, todas as coisas e me entregaria completamente para te ver feliz.<br> Sua alegria me deixa feliz, sua alegria me deixa com 
+ excesso de dopamina, assim como me faz querer viver mais e mais e mais ao seu lado, conforme o tempo passa, a certeza de que você é a pessoa certa só aumenta, e a minha insegurança de que não iremos dar certo, só diminui.<br>
+  Espero que goste de todo esse presente, não sei se um html com java, css e adjacente com um textinho é um bom presente, mas saiba que foi de coração, e com toda a vontade do mundo. Te dedico cada segundo da minha vida.<br><br>
+
+<div class="feliz-aniversario">FELIZ ANIVERSÁRIO AMOR, EU TE AMO MUITO!!</p></h4></div>
+<div>
+<img  src="foto2.jpeg" class="img-hover">
+<img class="img-hover" src="foto1.jpeg">
+<img class="img-hover" src="foto3.jpeg">
+<img class="img-hover" src="foto4.jpeg">
+<img class="img-hover" src="foto5.jpeg">
+<img class="img-hover" src="foto6.jpeg">
+</div>
+
+
+
+
+
+        <div id="contador"></div>
+
+<script>
+    
+    const dataInicio = new Date(2023, 2, 27); // mês começa em 0 (março = 2)
+
+    function atualizarContador() {
+      const agora = new Date();
+      const diff = agora - dataInicio;
+
+      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diff / (1000 * 60)) % 60);
+      const segundos = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("contador").textContent =
+        `Tempo desde 27/03/2023: ${dias} dias, ${horas} horas, ${minutos} minutos, ${segundos} segundos`;
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador(); // Atualiza já ao abrir
+  </script>
+  </center>
+</body>
+</html>
